@@ -3,6 +3,28 @@
     Welcome to the ReactJS Starter Projects repository! This repository contains 25 beginner-level projects to help
     youget started with ReactJS development.Each project is
     designed to introduce fundamental concepts of ReactJS and provide hands-on experience building React applications.
+    <h2>Project Structure</h2>
+    <pre>
+        <code>
+            ├── public/
+            ├── src/
+            │   ├── components/
+            │   │   ├── Accordion/.
+            │   │   ├── Random Background Change/.
+            │   │   └── ...
+            │   ├── assets/
+            │   ├── App.css
+            │   ├── index.css
+            │   ├── main.jsx
+            │   ├── App.jsx
+            │   
+            ├── README.md
+            ├── index.html
+            ├── LICENSE
+            ├── package.json
+            └── package-lock.json
+        </code>
+    </pre>
     <br>
     <h2>Projects Included</h2>
     <br>
