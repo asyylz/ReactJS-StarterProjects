@@ -18,8 +18,9 @@
             ├── public/
             ├── src/
             │   ├── components/
-            │   │   ├── Accordion/.
-            │   │   ├── Random Background Change/.
+            │   │   ├── accordion/.
+            │   │   ├── random-color/.
+            │   │   ├── star-rating/.
             │   │   └── ...
             │   ├── assets/
             │   ├── App.css
@@ -67,9 +68,24 @@
                 enhancing modularity and reusability.
             </p>
         </details>
-        <li>
-            <h3 style="text-decoration: underline;">Project 2 : Random Background Change</h3>
-        </li>
+        <details>
+            <summary>Project 2 : Random Background Change
+            </summary>
+            <br>
+            <p> <strong>Description:</strong> The project is a simple color generator built using React. It allows users to create random colors in either HEX or RGB format. Users can click buttons to switch between the color formats and generate random colors accordingly.
+            <br>
+            <strong>Concepts:</strong>The project utilizes React Hooks, such as `useState`, to manage state variables and control the behavior of the color generator. It employs event handling and dynamic styling to allow users to toggle between HEX and RGB color formats and generate random colors with visual feedback.
+            </p>
+        </details>
+          <details>
+            <summary>Project 3 : Star Rating
+            </summary>
+            <br>
+            <p> <strong>Description:</strong> 
+            <br>
+            <strong>Concepts:</strong>
+            </p>
+        </details>
     </ul>
     <br>
     <h2>Getting Started</h2>
