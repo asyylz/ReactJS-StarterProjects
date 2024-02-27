@@ -81,9 +81,9 @@
             <summary>Project 3 : Star Rating
             </summary>
             <br>
-            <p> <strong>Description:</strong> 
+            <p> <strong>Description:</strong>The StarRating component renders a star rating system where users can hover over stars to preview their rating before clicking to select. It dynamically updates star icons based on user interactions, offering a visually intuitive rating experience.
             <br>
-            <strong>Concepts:</strong>
+            <strong>Concepts:</strong><em>State Management with React Hooks (useState):</em>The component employs useState to manage the current rating and hover states, enabling real-time updates to star appearances in response to user interactions. Event Handling: Event handlers such as handleClick, handleMouseEnter, and handleMouseLeave are implemented to respond to user actions, facilitating the selection and preview of star ratings.
             </p>
         </details>
     </ul>
