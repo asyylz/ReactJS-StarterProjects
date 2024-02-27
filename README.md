@@ -1,12 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-
 <body>
     <h1>ReactJS Starter Projects</h1>
     Welcome to the ReactJS Starter Projects repository! This repository contains 25 beginner-level projects to help
@@ -83,7 +74,8 @@
             <br>
             <p> <strong>Description:</strong>The StarRating component renders a star rating system where users can hover over stars to preview their rating before clicking to select. It dynamically updates star icons based on user interactions, offering a visually intuitive rating experience.
             <br>
-            <strong>Concepts:</strong><em>State Management with React Hooks (useState):</em>The component employs useState to manage the current rating and hover states, enabling real-time updates to star appearances in response to user interactions. Event Handling: Event handlers such as handleClick, handleMouseEnter, and handleMouseLeave are implemented to respond to user actions, facilitating the selection and preview of star ratings.
+            <strong>Concepts:</strong><em><br>State Management with React Hooks (useState):</em>The component employs useState to manage the current rating and hover states, enabling real-time updates to star appearances in response to user interactions.<br>
+            <em>Event Handling:</em>Event handlers such as handleClick, handleMouseEnter, and handleMouseLeave are implemented to respond to user actions, facilitating the selection and preview of star ratings.
             </p>
         </details>
     </ul>
@@ -97,8 +89,7 @@
     </code>
 </pre>
     <br>
-    <p>Navigate to the project directory and select the project you want to work on. Each project is contained within
-        its own folder with its own README file providing specific instructions and requirements.</p>
+    <p>Navigate to the project directory and select the project you want to work on.</p>
     <br>
     <h2>Contributing</h2>
     <p>If you have ideas for additional projects or improvements to existing projects, contributions are welcome! Feel
@@ -108,5 +99,3 @@
     <p>This repository is licensed under the MIT License. See the MIT licence file for details.</p>
 
 </body>
-
-</html>
