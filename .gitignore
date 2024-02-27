@@ -26,3 +26,4 @@ vite.config.js
 .eslintrc.cjs
 readme.html
 .gitignore
+.prettierrc
