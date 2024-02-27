@@ -1,3 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
 <body>
     <h1>ReactJS Starter Projects</h1>
     Welcome to the ReactJS Starter Projects repository! This repository contains 25 beginner-level projects to help
@@ -9,10 +18,9 @@
             ├── public/
             ├── src/
             │   ├── components/
-            │   │   ├── accordion/.
-            │   │   ├── random-color/.
-            │   │   └── star-rating
-            │   │   └── ....
+            │   │   ├── Accordion/.
+            │   │   ├── Random Background Change/.
+            │   │   └── ...
             │   ├── assets/
             │   ├── App.css
             │   ├── index.css
@@ -30,8 +38,10 @@
     <h2>Projects Included</h2>
     <br>
     <ul>
-        <li>
-            <h3 style="text-decoration: underline;">Project 1 : Accordion</h3>
+        <details>
+            <summary>Project 1 : Accordion
+            </summary>
+            <br>
             <p> <strong>Description:</strong> The Accordion component is a user interface element that allows users to
                 expand and collapse content sections by clicking on the accordion titles.It provides both single and
                 multiple selection modes, enabling users to select one or multiple items at a time.
@@ -56,12 +66,9 @@
                 sections,
                 enhancing modularity and reusability.
             </p>
-        </li>
+        </details>
         <li>
-            <h3 style="text-decoration: underline;">Project 2 : Random Color</h3>
-            <p> <strong>Description:</strong>The project is a simple color generator built using React. It allows users to create random colors in either HEX or RGB format. Users can click buttons to switch between the color formats and generate random colors accordingly.
-            <br>
-            <strong>Concepts:</strong>The project utilizes React Hooks, such as `useState`, to manage state variables and control the behavior of the color generator. It employs event handling and dynamic styling to allow users to toggle between HEX and RGB color formats and generate random colors with visual feedback.
+            <h3 style="text-decoration: underline;">Project 2 : Random Background Change</h3>
         </li>
     </ul>
     <br>
@@ -85,6 +92,7 @@
     <p>This repository is licensed under the MIT License. See the MIT licence file for details.</p>
 
 
-
-
 </body>
+
+
+</html>
