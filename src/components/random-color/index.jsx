@@ -1,5 +1,5 @@
 import "./styles.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 export default function RandomColour() {
   const [typeOfColour, setTypeOfColour] = useState("hex");
   const [colour, setColour] = useState("#000000");
@@ -9,7 +9,6 @@ export default function RandomColour() {
   }
 
   function handleCreateRandomHexColour() {
-    //#123456
     const hex = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"];
     let hexColour = "#";
     for (let i = 0; i < 6; i++) {
@@ -25,11 +24,22 @@ export default function RandomColour() {
     const b = randomColourUtility(256);
     setColour(`rgb(${r},${g},${b})`);
   }
+  useEffect(() => {
+    if (typeOfColour === "rgb") handleCreateRandomRGBColour();
+    else handleCreateRandomHexColour();
+  }, [typeOfColour]);
 
   return (
-    <div style={{ width: "100vw", height: "100vh", backgroundColor: colour }}>
+    <div
+      style={{
+        width: "100vw",
+        height: "100vh",
+        backgroundColor: colour,
+        textAlign: "center",
+      }}
+    >
       <button onClick={() => setTypeOfColour("hex")}>Create HEX Colour</button>
-      <button onClick={() => setColour("rgb")}>Create RGB Colour</button>
+      <button onClick={() => setTypeOfColour("rgb")}>Create RGB Colour</button>
       <button
         onClick={
           typeOfColour === "hex"
@@ -41,14 +51,19 @@ export default function RandomColour() {
       </button>
       <div
         style={{
-          display: flex,
+          display: "flex",
           justifyContent: "center",
           alignItems: "center",
           color: "white",
           fontSize: "60px",
           marginTop: "50px",
+          flexDirection: "column",
+          gap: "20px",
         }}
-      ></div>
+      >
+        <h3>{typeOfColour === "rgb" ? "RGB Colour" : "HEX Colour"}</h3>
+        <h1>{colour}</h1>
+      </div>
     </div>
   );
 }
