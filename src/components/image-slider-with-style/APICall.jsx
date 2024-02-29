@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import ImageSlider from './index';
+import ImageSlider from './ImageSlider.jsx';
 import { createApi } from 'unsplash-js';
+
 
 export default function UnsplashAPICall({ query, orientation }) {
   const [images, setImages] = useState([]);
@@ -21,8 +22,6 @@ export default function UnsplashAPICall({ query, orientation }) {
 
     fetchImages();
   }, [query, orientation]);
-
-  console.log(images);
   
   return <ImageSlider images={images} />; // Render the ImageSlider with fetched images
 }

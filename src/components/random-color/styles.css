@@ -1,4 +1,4 @@
-
+/* 
 button {
     --b: 3px;
     /* border thickness */
@@ -31,4 +31,4 @@ button:focus-visible {
 button:active {
     background: var(--color);
     color: #fff;
-}
+} */

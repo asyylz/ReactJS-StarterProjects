@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300&display=swap');
+
+:root {
+  --img: url("https://images.unsplash.com/photo-1549483249-f0b359d1e289?crop=entropy&cs=srgb&fm=jpg&ixid=M3w1NzI0OTd8MHwxfHNlYXJjaHwxMHx8bG9uZG9ufGVufDB8MHx8fDE3MDkxOTI1Mjl8MA&ixlib=rb-4.0.3&q=85");
+}
+
+/* html {
+  background-color: #fff;
+} */
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center center;
+  background-image: var(--img);
+  transition: background 0.5s ease 0s;
+  font-family: 'Londrina Solid', cursive;
+}
+
+body:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 0;
+}
+
+.content {
+  width: 60vmin;
+  height: 60vmin;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center center;
+  /* background-image: var(--img, url(https://cdn.josetxu.com/img/gp-fisura-saqueadores.jpg)); */
+  transition: background 0.5s ease 0s;
+  max-width: 500px;
+  max-height: 500px;
+  box-shadow: 0 0 0vmin 1vmin #fff, 0 0 10vmin 5vmin #000;
+  border-radius: 2px;
+  z-index: 0;
+  background-color: #fff;
+}
+
+/* .content:before {
+  content: "cuadernodeescaladas.com";
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  margin-bottom: -55vmin;
+  text-shadow: -1px -1px 0 #0007;
+  color: #fff4;
+  font-size: 18px;
+
+} */
+
+/* CONTROLS */
+.controls {
+  position: absolute;
+}
+
+input[type=radio] {
+  display: none;
+}
+
+label {
+  width: 50vw;
+  height: 100vh;
+  /* position: relative; */
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+label:hover {
+  opacity: 1;
+}
+
+
+/* ARROWS */
+/* rigth-arrow */
+label.right:before {
+  content: "";
+  position: absolute;
+  background:
+    linear-gradient(30deg, #fff0 60%, #fff calc(60% + 1px)),
+    linear-gradient(-30deg, #fff 40%, #fff0 calc(40% + 1px)),
+    linear-gradient(-90deg, #fff0 70%, #fff calc(70% + 1px));
+  width: 6vmin;
+  height: 6vmin;
+  border-radius: 5px;
+  right: -45vmin;
+  top: calc(50% - 3vmin);
+}
+
+/* left arrow */
+label.left:before {
+  content: "";
+  position: absolute;
+  background:
+    linear-gradient(30deg, #fff0 60%, #fff calc(60% + 1px)),
+    linear-gradient(-30deg, #fff 40%, #fff0 calc(40% + 1px)),
+    linear-gradient(-90deg, #fff0 70%, #fff calc(70% + 1px));
+  width: 6vmin;
+  height: 6vmin;
+  border-radius: 5px;
+  top: calc(50% - 3vmin);
+  left: -45vmin;
+  transform: rotate(180deg);
+}
+
+
+/* TITLES  */
+h3.description {
+  position: absolute;
+  top: 2vh;
+  left: 50%;
+  transform: translateX(-50%);;
+  color: #fff;
+  font-size: 35px;
+  font-family: 'Londrina Solid', cursive !important;
+  line-height: 45px;
+  transition: all 0.5s ease 0s;
+  text-shadow: 0px 1px 0 #000000d9;
+  white-space: pre-wrap;
+  text-align: center;
+  width: 90%;
+  padding: 1vmin;
+  font-weight: 300;
+}
+
+
+/*** THUMBNAILS ***/
+.thumbnails {
+  position: absolute;
+  background: #ffffff05;
+  width: 100vw;
+  bottom: 3vh;
+  text-align: center;
+  padding: 1vmin;
+}
+
+.thumbnails label {
+  background-color: #0008;
+  position: relative;
+  width: 8vmin;
+  height: 8vmin;
+  display: inline-block;
+  margin-left: 1vw;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5;
+  border-radius: 2px;
+  box-shadow: 0 0 10vmin 5vmin #000;
+}
+
+.thumbnails label:before {
+  display: none;
+}
+
+.thumbnails label:hover {
+  opacity: 1;
+}
+
+
+label.checked {
+  opacity: 1;
+  box-shadow: 0 0 0.01vmin 0.5vmin #fff;
+}
+
+
+
+/* MEDIA QUERIES */
+@media only screen and (max-width:767px) {
+  h3.description {
+    top: 2vh;
+    font-size: 16px;
+    white-space: initial;
+  }
+}
+
+@media only screen and (max-width:580px) {
+  h3.description {
+    font-size: 16px;
+    white-space: pre-wrap;
+  }
+}

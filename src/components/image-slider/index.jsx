@@ -5,6 +5,7 @@ import './styles.css'
 export default function ImageSlider({ images }) {
   const [currentSlide, setCurrentSlide] = useState(0);
 
+
   function handlePrevious() {
     setCurrentSlide(currentSlide === 0 ? images.length - 1 : currentSlide - 1);
   }
