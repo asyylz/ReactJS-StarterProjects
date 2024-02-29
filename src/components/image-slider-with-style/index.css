@@ -8,7 +8,7 @@
   background-color: #fff;
 } */
 
-body {
+.virtualBody {
   margin: 0;
   padding: 0;
   width: 100vw;

@@ -46,7 +46,14 @@ console.log(images)
   };  
 
   return (
-    <div>
+    <div
+    className="virtualBody"
+    style={{
+      backgroundImage: `url(${
+        images.find((image) => image.urls.regular === currentSlide)?.urls.full
+      })`,
+    }}
+  >
       {images?.map((image, index) => (
         <h3
           className={`description ${
