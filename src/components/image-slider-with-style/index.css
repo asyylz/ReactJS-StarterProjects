@@ -1,12 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300&display=swap');
 
 :root {
   --img: url("https://images.unsplash.com/photo-1549483249-f0b359d1e289?crop=entropy&cs=srgb&fm=jpg&ixid=M3w1NzI0OTd8MHwxfHNlYXJjaHwxMHx8bG9uZG9ufGVufDB8MHx8fDE3MDkxOTI1Mjl8MA&ixlib=rb-4.0.3&q=85");
 }
-
-/* html {
-  background-color: #fff;
-} */
 
 .virtualBody {
   margin: 0;
@@ -20,7 +15,7 @@
   background-size: cover;
   background-position: center center;
   background-image: var(--img);
-  transition: background 0.5s ease 0s;
+  transition: background 0.5s ease-in-out 0.1s;
   font-family: 'Londrina Solid', cursive;
 }
 
@@ -41,8 +36,7 @@ body:before {
   justify-content: center;
   background-size: cover;
   background-position: center center;
-  /* background-image: var(--img, url(https://cdn.josetxu.com/img/gp-fisura-saqueadores.jpg)); */
-  transition: background 0.5s ease 0s;
+  transition: background 0.5s ease-in-out 0.1s;
   max-width: 500px;
   max-height: 500px;
   box-shadow: 0 0 0vmin 1vmin #fff, 0 0 10vmin 5vmin #000;
@@ -50,18 +44,6 @@ body:before {
   z-index: 0;
   background-color: #fff;
 }
-
-/* .content:before {
-  content: "cuadernodeescaladas.com";
-  position: absolute;
-  width: 100%;
-  text-align: center;
-  margin-bottom: -55vmin;
-  text-shadow: -1px -1px 0 #0007;
-  color: #fff4;
-  font-size: 18px;
-
-} */
 
 /* CONTROLS */
 .controls {
@@ -75,7 +57,6 @@ input[type=radio] {
 label {
   width: 50vw;
   height: 100vh;
-  /* position: relative; */
   cursor: pointer;
   opacity: 0.5;
 }
@@ -123,7 +104,8 @@ h3.description {
   position: absolute;
   top: 2vh;
   left: 50%;
-  transform: translateX(-50%);;
+  transform: translateX(-50%);
+  ;
   color: #fff;
   font-size: 35px;
   font-family: 'Londrina Solid', cursive !important;
@@ -160,10 +142,7 @@ h3.description {
   opacity: 0.5;
   border-radius: 2px;
   box-shadow: 0 0 10vmin 5vmin #000;
-}
-
-.thumbnails label:before {
-  display: none;
+  transition: all 0.5s ease-in-out 0.2s;
 }
 
 .thumbnails label:hover {
@@ -182,14 +161,14 @@ label.checked {
 @media only screen and (max-width:767px) {
   h3.description {
     top: 2vh;
-    font-size: 16px;
+    font-size: 1.5rem;
     white-space: initial;
   }
 }
 
 @media only screen and (max-width:580px) {
   h3.description {
-    font-size: 16px;
+    font-size: 1.5rem;
     white-space: pre-wrap;
   }
 }
