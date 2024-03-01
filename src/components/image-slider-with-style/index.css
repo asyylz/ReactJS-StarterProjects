@@ -15,8 +15,8 @@
   background-size: cover;
   background-position: center center;
   background-image: var(--img);
-  transition: background 0.5s ease-in-out 0.1s;
-  font-family: 'Londrina Solid', cursive;
+  transition: background 0.3s ease-in-out 0.1s;
+
 }
 
 body:before {
@@ -50,9 +50,6 @@ body:before {
   position: absolute;
 }
 
-input[type=radio] {
-  display: none;
-}
 
 label {
   width: 50vw;
@@ -104,19 +101,19 @@ h3.description {
   position: absolute;
   top: 2vh;
   left: 50%;
-  transform: translateX(-50%);
-  ;
+  transform: translateX(-50%);;
   color: #fff;
   font-size: 35px;
   font-family: 'Londrina Solid', cursive !important;
   line-height: 45px;
-  transition: all 0.5s ease 0s;
+  transition: all ease-in-out 0.7s;
   text-shadow: 0px 1px 0 #000000d9;
   white-space: pre-wrap;
   text-align: center;
   width: 90%;
   padding: 1vmin;
   font-weight: 300;
+  background: rgba(0, 0, 0, 0.3);
 }
 
 
@@ -142,20 +139,18 @@ h3.description {
   opacity: 0.5;
   border-radius: 2px;
   box-shadow: 0 0 10vmin 5vmin #000;
-  transition: all 0.5s ease-in-out 0.2s;
+  transition: border all-ease-in 0.4s;
 }
+
 
 .thumbnails label:hover {
   opacity: 1;
 }
 
-
 label.checked {
   opacity: 1;
-  box-shadow: 0 0 0.01vmin 0.5vmin #fff;
+  border: 2px solid white;
 }
-
-
 
 /* MEDIA QUERIES */
 @media only screen and (max-width:767px) {

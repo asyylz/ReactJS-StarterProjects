@@ -3,7 +3,7 @@ import "./index.css";
 
 export default function ImageSlider({ images }) {
   const [currentSlide, setCurrentSlide] = useState(images[0]?.urls.regular);
-console.log(images)
+
   useEffect(() => {
     setCurrentSlide(images[0]?.urls.regular); // Reset currentSlide when images change
   }, [images]);
@@ -18,16 +18,17 @@ console.log(images)
       }
     });
   }
-  
+
   function handlePrevious() {
     const currentIndex = images.findIndex(
       (image) => image.urls.regular === currentSlide
     );
-    const previousIndex = currentIndex === 0 ? images.length - 1 : currentIndex - 1;
+    const previousIndex =
+      currentIndex === 0 ? images.length - 1 : currentIndex - 1;
     setCurrentSlide(images[previousIndex].urls.regular);
     handleThumbnailStyles(previousIndex);
   }
-  
+
   function handleNext() {
     const currentIndex = images.findIndex(
       (image) => image.urls.regular === currentSlide
@@ -36,35 +37,31 @@ console.log(images)
     setCurrentSlide(images[nextIndex].urls.regular);
     handleThumbnailStyles(nextIndex);
   }
-  
+
   const handleThumbnailClick = (url, event) => {
     setCurrentSlide(url);
     const targetThumbnail = event.target;
-    //console.log(targetThumbnail.parentNode.children)
-    const index = Array.from(targetThumbnail.parentNode.children).indexOf(targetThumbnail);
+    const index = Array.from(targetThumbnail.parentNode.children).indexOf(
+      targetThumbnail
+    );
     handleThumbnailStyles(index);
-  };  
+  };
 
   return (
     <div
-    className="virtualBody"
-    style={{
-      backgroundImage: `url(${
-        images.find((image) => image.urls.regular === currentSlide)?.urls.full
-      })`,
-    }}
-  >
-      {images?.map((image, index) => (
-        <h3
-          className={`description ${
-            currentSlide === image.urls.regular ? "active" : ""
-          }`}
-          key={index}
-        >
-          {currentSlide === image.urls.regular && image.description}
-        </h3>
-      ))}
-
+      className="virtualBody"
+      style={{
+        backgroundImage: `url(${
+          images.find((image) => image.urls.regular === currentSlide)?.urls.full
+        })`,
+      }}
+    >
+      <h3 className="description">
+        {
+          images.find((image) => image.urls.regular === currentSlide)
+            ?.description
+        }
+      </h3>
       <div
         className="content"
         style={{
