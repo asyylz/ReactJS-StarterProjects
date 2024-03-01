@@ -88,19 +88,24 @@
                 implemented to respond to user actions, facilitating the selection and preview of star ratings.
             </p>
         </details>
-        <summary>Project 4 : Image Slider/Image Slider With Style
+        <details>
+        <summary>Project 4 : Image Slider / Image Slider With Style
         </summary>
         <br>
         <p> <strong>Description:</strong>The Image Slider app is a React component that displays a slideshow of images.
             It allows users to navigate through the images using left and right arrows or by clicking on thumbnails at
             the bottom.
             <br>
-            <strong>Concepts:</strong><em><br>
-                Slideshow Navigation:</em> Users can move to the previous or next image using arrow buttons.<br>
+            <strong>Concepts:</strong>
+            <em><br>Slideshow Navigation:</em> Users can move to the previous or next image using arrow buttons.<br>
             <em>Thumbnail Navigation:</em> Thumbnails below the slideshow provide an overview of all images. Clicking on
-            a thumbnail switches to that image. <br>
-            <em>Dynamic Styling:</em> Thumbnails and the main image change appearance to indicate the current selection.
-            Responsive Design: The app adapts to different screen sizes for a consistent user experience.
+            a thumbnail switches to that image. <br><br>
+            <em>Dynamic Styling:</em> Thumbnails and the main image change appearance to indicate the current selection.<br>
+            <em>Responsive Design:</em> The app adapts to different screen sizes for a consistent user experience.
+            <br>
+            <br>
+            <strong>Image Slider:</strong>This app provides basic functionality for sliding through a collection of images. It likely focuses on core features such as navigation controls                 and imagetransitions without much emphasis on visual styling.<br><br>
+            <strong>Image Slider With Style:</strong> In contrast, "Image Slider With Style" not only offers image navigation but also prioritizes aesthetically pleasing design elements. It             likely includes  custom styles, animations, and additional visual enhancements to create a more polished and engaging user experience.
         </p>
         </details>
     </ul>
