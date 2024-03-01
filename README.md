@@ -63,20 +63,45 @@
             <summary>Project 2 : Random Background Change
             </summary>
             <br>
-            <p> <strong>Description:</strong> The project is a simple color generator built using React. It allows users to create random colors in either HEX or RGB format. Users can click buttons to switch between the color formats and generate random colors accordingly.
-            <br>
-            <strong>Concepts:</strong>The project utilizes React Hooks, such as `useState`, to manage state variables and control the behavior of the color generator. It employs event handling and dynamic styling to allow users to toggle between HEX and RGB color formats and generate random colors with visual feedback.
+            <p> <strong>Description:</strong> The project is a simple color generator built using React. It allows users
+                to create random colors in either HEX or RGB format. Users can click buttons to switch between the color
+                formats and generate random colors accordingly.
+                <br>
+                <strong>Concepts:</strong>The project utilizes React Hooks, such as `useState`, to manage state
+                variables and control the behavior of the color generator. It employs event handling and dynamic styling
+                to allow users to toggle between HEX and RGB color formats and generate random colors with visual
+                feedback.
             </p>
         </details>
-          <details>
+        <details>
             <summary>Project 3 : Star Rating
             </summary>
             <br>
-            <p> <strong>Description:</strong>The StarRating component renders a star rating system where users can hover over stars to preview their rating before clicking to select. It dynamically updates star icons based on user interactions, offering a visually intuitive rating experience.
-            <br>
-            <strong>Concepts:</strong><em><br>State Management with React Hooks (useState):</em>The component employs useState to manage the current rating and hover states, enabling real-time updates to star appearances in response to user interactions.<br>
-            <em>Event Handling:</em>Event handlers such as handleClick, handleMouseEnter, and handleMouseLeave are implemented to respond to user actions, facilitating the selection and preview of star ratings.
+            <p> <strong>Description:</strong>The StarRating component renders a star rating system where users can hover
+                over stars to preview their rating before clicking to select. It dynamically updates star icons based on
+                user interactions, offering a visually intuitive rating experience.
+                <br>
+                <strong>Concepts:</strong><em><br>State Management with React Hooks (useState):</em>The component
+                employs useState to manage the current rating and hover states, enabling real-time updates to star
+                appearances in response to user interactions.<br>
+                <em>Event Handling:</em>Event handlers such as handleClick, handleMouseEnter, and handleMouseLeave are
+                implemented to respond to user actions, facilitating the selection and preview of star ratings.
             </p>
+        </details>
+        <summary>Project 4 : Image Slider/Image Slider With Style
+        </summary>
+        <br>
+        <p> <strong>Description:</strong>The Image Slider app is a React component that displays a slideshow of images.
+            It allows users to navigate through the images using left and right arrows or by clicking on thumbnails at
+            the bottom.
+            <br>
+            <strong>Concepts:</strong><em><br>
+                Slideshow Navigation:</em> Users can move to the previous or next image using arrow buttons.<br>
+            <em>Thumbnail Navigation:</em> Thumbnails below the slideshow provide an overview of all images. Clicking on
+            a thumbnail switches to that image. <br>
+            <em>Dynamic Styling:</em> Thumbnails and the main image change appearance to indicate the current selection.
+            Responsive Design: The app adapts to different screen sizes for a consistent user experience.
+        </p>
         </details>
     </ul>
     <br>
