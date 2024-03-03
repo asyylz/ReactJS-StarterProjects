@@ -112,7 +112,7 @@
             <summary>Project 5 : Load More Products
             </summary>
             <br>
-            <p> <strong>Description:</strong>The "Load More Data" app is a simple web application that fetches product
+            <p> <strong>Description:</strong>TThe "Load More Data" app is a simple web application that fetches product
                 data from an external API and displays it in a paginated manner. The app loads products in batches of 20
                 and allows users to load more products dynamically by clicking on a "Load More Products" button.
                 <br>
@@ -125,13 +125,56 @@
                 fetched data is then stored in the component's state. <br>
                 <em>Pagination:</em> The app implements pagination logic by incrementing the pagination count each time
                 the "Load More Products" button is clicked. This count is used to determine the offset for fetching the
-                next batch of products from the API.<br>
+                next batch of products from the API.
                 <em>UI Rendering: </em> The fetched product data is rendered dynamically in the UI using JSX. Each
                 product is displayed as a card containing an image and a title. The "Load More Products" button is
-                conditionally disabled when the maximum number of products (100 in this case) is reached.<br>
+                conditionally disabled when the maximum number of products (100 in this case) is reached.
                 <em>Loading Indicator:</em> During data fetching, a loading indicator is displayed to inform users that
                 data is being retrieved from the server. Once the data is fetched and rendered, the loading indicator
                 disappears.
+            </p>
+        </details>
+        <details>
+            <summary>Project 6 : Tree View
+            </summary>
+            <br>
+            <p> <strong>Description:</strong>
+                The tree view component manages the display state of its child items using useState, allowing users to
+                expand or collapse menu sections dynamically. It employs event handling to toggle the visibility of
+                child items based on user interactions, enhancing navigation flexibility and user experience.
+                <br>
+                <strong>Concepts:</strong><br>
+                <em>useState Hook:</em> Manages the state for controlling the visibility of child menu items, enabling
+                dynamic expansion and collapse functionality.<br>
+                <em>Toggle Visibility:</em>Allows users to toggle the visibility of child menu items by clicking on the
+                expand/collapse icon, providing an intuitive user interface for navigation.<br>
+                <em>Conditional Rendering:</em>Conditionally renders child menu items based on their visibility state,
+                optimizing performance by rendering only the necessary components.<br>
+                <em>Event Handling:</em> Utilizes event handling to capture user clicks on the expand/collapse icon and
+                update the visibility state accordingly, ensuring responsive behavior.<br>
+                <em>Flexbox Layout:</em>
+                Utilizes flexbox layout to arrange menu item elements horizontally with a specified gap, enhancing the
+                visual presentation and alignment of menu components.
+            </p>
+        </details>
+        <details>
+            <summary>Project 7 : QR Code Generator
+            </summary>
+            <br>
+            <p> <strong>Description:</strong>The QR Code Generator is a simple React component that allows users to
+                input text and generate a corresponding QR code. It utilizes the react-qr-code library to dynamically
+                create QR codes based on user input.
+                <br>
+                <strong>Concepts:</strong><br>
+                <em>useState Hook:</em> Manages state for input text (input) and generated QR code (qrCode),
+                enabling dynamic UI updates.<br>
+                <em>Input Handling:</em> Users input text in the provided field, updating the input state.<br>
+                <em>QR Code Generation:</em> Upon clicking "Generate", the handleGenerateQrcode function sets the
+                qrCode state based on the input.<br>
+                <em>Conditional Rendering:</em> Disables the "Generate" button if the input field is empty or
+                contains only whitespace.<br>
+                <em>Displaying the QR Code:</em> Utilizes the QRCode component to display the generated QR code
+                dynamically.
             </p>
         </details>
     </ul>
