@@ -177,6 +177,24 @@
                 dynamically.
             </p>
         </details>
+         <details>
+            <summary>Project 8 : Light Dark Theme Toggle
+            </summary>
+            <br>
+            <p> <strong>Description:</strong>The Light Dark Theme Toggle App is a React application that enables users
+                to switch between light and dark themes for enhanced readability and customization. It leverages
+                localstorage to persist the selected theme across sessions, providing a seamless and personalized user
+                experience.<br>
+                <strong>Concepts:</strong><br>
+                <em>Theme Toggling:</em> Users can conveniently toggle between light and dark themes using a simple
+                button click, allowing for quick customization of the application's appearance.<br>
+                <em>Local Storage Management:</em> The app utilizes the useLocalStorage custom hook to manage theme
+                preferences in local storage, ensuring that the chosen theme persists across browser sessions.<br>
+                <em>User Interface Enhancement:</em> By offering theme customization options, the app enhances user
+                experience by allowing users to tailor the application's appearance to their preferences, thereby
+                improving readability and reducing eye strain.<br>
+            </p>
+        </details>
     </ul>
     <br>
     <h2>Getting Started</h2>
