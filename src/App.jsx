@@ -5,7 +5,8 @@ import UnsplashAPICall from './components/image-slider/UnsplashAPICall';
 import APICall from './components/image-slider-with-style/APICall';
 import LoadMoreData from './components/load-more-data';
 import TreeView from './components/tree-view';
-import menus from "./components/tree-view/data";
+import menus from './components/tree-view/data';
+import QRCodeGenerator from './components/qr-code-generator';
 
 function App() {
   return (
@@ -23,7 +24,10 @@ function App() {
       {/* Load more products components */}
       {/* <LoadMoreData  /> */}
       {/* Tree View */}
-      <TreeView  menus={menus} />      
+      {/* <TreeView  menus={menus} />*/}
+      {/* QR code generate */}
+      {/* <QRCode /> */}
+      <QRCodeGenerator />
     </div>
   );
 }

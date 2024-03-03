@@ -18,15 +18,15 @@
   transition: background 0.3s ease-in-out 0.1s;
 
 }
-
-body:before {
+ /* commented for other components */
+/* body:before {
   content: "";
   position: absolute;
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.3);
-  z-index: -1; 
-}
+  z-index: 0; 
+} */
 
 .content {
   width: 60vmin;
