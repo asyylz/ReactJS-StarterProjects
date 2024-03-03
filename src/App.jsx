@@ -4,6 +4,8 @@ import StarRating from './components/star-rating';
 import UnsplashAPICall from './components/image-slider/UnsplashAPICall';
 import APICall from './components/image-slider-with-style/APICall';
 import LoadMoreData from './components/load-more-data';
+import TreeView from './components/tree-view';
+import menus from "./components/tree-view/data";
 
 function App() {
   return (
@@ -19,8 +21,9 @@ function App() {
       {/* Image Slider with style */}
       {/* <APICall query={'london'} orientation={'landscape'} /> */}
       {/* Load more products components */}
-      <LoadMoreData  />
-      
+      {/* <LoadMoreData  /> */}
+      {/* Tree View */}
+      <TreeView  menus={menus} />      
     </div>
   );
 }
