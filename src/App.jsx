@@ -27,7 +27,7 @@ function App() {
       {/* <TreeView  menus={menus} />*/}
       {/* QR code generate */}
       {/* <QRCode /> */}
-      <QRCodeGenerator />
+      {/* <QRCodeGenerator /> */}
     </div>
   );
 }
