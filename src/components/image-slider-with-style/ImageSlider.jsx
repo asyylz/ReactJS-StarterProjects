@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import "./index.css";
+import "./styles.css";
 
 export default function ImageSlider({ images }) {
   const [currentSlide, setCurrentSlide] = useState(images[0]?.urls.regular);
-
+console.log(images)
   useEffect(() => {
     setCurrentSlide(images[0]?.urls.regular); // Reset currentSlide when images change
   }, [images]);

@@ -8,7 +8,7 @@ export default function UnsplashAPICall({ query, orientation }) {
   useEffect(() => {
     const fetchImages = async () => {
       const api = createApi({
-        accessKey: '***************************', //  API key
+        accessKey: '1qOxZCGH50PEJ_x5DgQFk4qMgNm6C3lLN1nQqYbZPOU', //  API key
       });
 
       try {
