@@ -89,24 +89,50 @@
             </p>
         </details>
         <details>
-        <summary>Project 4 : Image Slider / Image Slider With Style
-        </summary>
-        <br>
-        <p> <strong>Description:</strong>The Image Slider app is a React component that displays a slideshow of images.
-            It allows users to navigate through the images using left and right arrows or by clicking on thumbnails at
-            the bottom.
+            <summary>Project 4 : Image Slider/Image Slider With Style
+            </summary>
             <br>
-            <strong>Concepts:</strong>
-            <em><br>Slideshow Navigation:</em> Users can move to the previous or next image using arrow buttons.<br>
-            <em>Thumbnail Navigation:</em> Thumbnails below the slideshow provide an overview of all images. Clicking on
-            a thumbnail switches to that image. <br><br>
-            <em>Dynamic Styling:</em> Thumbnails and the main image change appearance to indicate the current selection.<br>
-            <em>Responsive Design:</em> The app adapts to different screen sizes for a consistent user experience.
+            <p> <strong>Description:</strong>The Image Slider app is a React component that displays a slideshow of
+                images.
+                It allows users to navigate through the images using left and right arrows or by clicking on thumbnails
+                at
+                the bottom.
+                <br>
+                <strong>Concepts:</strong><em><br>
+                    Slideshow Navigation:</em> Users can move to the previous or next image using arrow buttons.<br>
+                <em>Thumbnail Navigation:</em> Thumbnails below the slideshow provide an overview of all images.
+                Clicking on
+                a thumbnail switches to that image. <br>
+                <em>Dynamic Styling:</em> Thumbnails and the main image change appearance to indicate the current
+                selection.
+                Responsive Design: The app adapts to different screen sizes for a consistent user experience.
+            </p>
+        </details>
+        <details>
+            <summary>Project 5 : Load More Products
+            </summary>
             <br>
-            <br>
-            <strong>Image Slider:</strong>This app provides basic functionality for sliding through a collection of images. It likely focuses on core features such as navigation controls                 and imagetransitions without much emphasis on visual styling.<br><br>
-            <strong>Image Slider With Style:</strong> In contrast, "Image Slider With Style" not only offers image navigation but also prioritizes aesthetically pleasing design elements. It             likely includes  custom styles, animations, and additional visual enhancements to create a more polished and engaging user experience.
-        </p>
+            <p> <strong>Description:</strong>TThe "Load More Data" app is a simple web application that fetches product
+                data from an external API and displays it in a paginated manner. The app loads products in batches of 20
+                and allows users to load more products dynamically by clicking on a "Load More Products" button.
+                <br>
+                <strong>Concepts:</strong><em><br>
+                    State Management: </em> The app utilizes React's state management capabilities to keep track of
+                various aspects of the application, such as loading status, fetched products, pagination count, and
+                button disabling.<br>
+                <em>Data Fetching:</em> It fetches product data from a remote API using the fetchProducts() function.
+                This function is triggered when the component mounts and whenever the pagination count changes. The
+                fetched data is then stored in the component's state. <br>
+                <em>Pagination:</em> The app implements pagination logic by incrementing the pagination count each time
+                the "Load More Products" button is clicked. This count is used to determine the offset for fetching the
+                next batch of products from the API.
+                <em>UI Rendering: </em> The fetched product data is rendered dynamically in the UI using JSX. Each
+                product is displayed as a card containing an image and a title. The "Load More Products" button is
+                conditionally disabled when the maximum number of products (100 in this case) is reached.
+                <em>Loading Indicator:</em> During data fetching, a loading indicator is displayed to inform users that
+                data is being retrieved from the server. Once the data is fetched and rendered, the loading indicator
+                disappears.
+            </p>
         </details>
     </ul>
     <br>
