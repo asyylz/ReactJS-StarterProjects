@@ -112,7 +112,7 @@
             <summary>Project 5 : Load More Products
             </summary>
             <br>
-            <p> <strong>Description:</strong>TThe "Load More Data" app is a simple web application that fetches product
+            <p> <strong>Description:</strong>The "Load More Data" app is a simple web application that fetches product
                 data from an external API and displays it in a paginated manner. The app loads products in batches of 20
                 and allows users to load more products dynamically by clicking on a "Load More Products" button.
                 <br>
@@ -125,10 +125,10 @@
                 fetched data is then stored in the component's state. <br>
                 <em>Pagination:</em> The app implements pagination logic by incrementing the pagination count each time
                 the "Load More Products" button is clicked. This count is used to determine the offset for fetching the
-                next batch of products from the API.
+                next batch of products from the API.<br>
                 <em>UI Rendering: </em> The fetched product data is rendered dynamically in the UI using JSX. Each
                 product is displayed as a card containing an image and a title. The "Load More Products" button is
-                conditionally disabled when the maximum number of products (100 in this case) is reached.
+                conditionally disabled when the maximum number of products (100 in this case) is reached.<br>
                 <em>Loading Indicator:</em> During data fetching, a loading indicator is displayed to inform users that
                 data is being retrieved from the server. Once the data is fetched and rendered, the loading indicator
                 disappears.
