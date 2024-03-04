@@ -195,6 +195,19 @@
                 improving readability and reducing eye strain.<br>
             </p>
         </details>
+        <details>
+            <summary>Project 9 : Custom Scroll Indicator
+            </summary>
+            <br>
+            <p> <strong>Description:</strong>The Scroll Indicator component is designed to display a custom scroll indicator along with fetched data from a specified URL. It provides users with visual feedback on their scrolling progress within a webpage while also loading and displaying data asynchronously.<br>
+            <strong>Concepts:</strong><br>
+            <em>useState: </em>Manages state variables such as data, loading, errorMessage, and scrollPercentage.<br>
+            <em>Asynchronous Data Fetching:</em>Uses the fetch API to retrieve data asynchronously from a specified URL.<br>
+            <em>Scroll Event Handling:</em>Detects scroll events on the window and calculates the scroll percentage to update the progress bar. <br>
+            <em>Conditional Rendering:</em>Conditionally renders loading messages, error messages, and fetched data based on the component's state.<br>
+            <em> CSS Styling:</em> Utilizes CSS styles to create custom scroll indicators and layout for the component's UI elements.<br>
+            </p>
+        </details>
     </ul>
     <br>
     <h2>Getting Started</h2>
