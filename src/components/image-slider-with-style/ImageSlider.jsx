@@ -1,27 +1,27 @@
-import React, { useEffect, useState } from "react";
-import "./styles.css";
+import React, { useEffect, useState } from 'react';
+import './imageSlider.css';
 
 export default function ImageSlider({ images }) {
   const [currentSlide, setCurrentSlide] = useState(images[0]?.urls.regular);
-console.log(images)
+  console.log(images);
   useEffect(() => {
     setCurrentSlide(images[0]?.urls.regular); // Reset currentSlide when images change
   }, [images]);
 
   function handleThumbnailStyles(index) {
-    const allThumbnails = document.querySelectorAll(".thumbnails label");
+    const allThumbnails = document.querySelectorAll('.thumbnails label');
     allThumbnails.forEach((thumbnail, idx) => {
       if (idx === index) {
-        thumbnail.classList.add("checked");
+        thumbnail.classList.add('checked');
       } else {
-        thumbnail.classList.remove("checked");
+        thumbnail.classList.remove('checked');
       }
     });
   }
 
   function handlePrevious() {
     const currentIndex = images.findIndex(
-      (image) => image.urls.regular === currentSlide
+      image => image.urls.regular === currentSlide
     );
     const previousIndex =
       currentIndex === 0 ? images.length - 1 : currentIndex - 1;
@@ -31,7 +31,7 @@ console.log(images)
 
   function handleNext() {
     const currentIndex = images.findIndex(
-      (image) => image.urls.regular === currentSlide
+      image => image.urls.regular === currentSlide
     );
     const nextIndex = (currentIndex + 1) % images.length;
     setCurrentSlide(images[nextIndex].urls.regular);
@@ -52,20 +52,17 @@ console.log(images)
       className="virtualBody"
       style={{
         backgroundImage: `url(${
-          images.find((image) => image.urls.regular === currentSlide)?.urls.full
+          images.find(image => image.urls.regular === currentSlide)?.urls.full
         })`,
       }}
     >
       <h3 className="description">
-        {
-          images.find((image) => image.urls.regular === currentSlide)
-            ?.description
-        }
+        {images.find(image => image.urls.regular === currentSlide)?.description}
       </h3>
       <div
         className="content"
         style={{
-          backgroundImage: currentSlide ? `url(${currentSlide})` : "none",
+          backgroundImage: currentSlide ? `url(${currentSlide})` : 'none',
         }}
       >
         <div className="controls">
@@ -75,11 +72,11 @@ console.log(images)
         <div className="thumbnails">
           {images?.map((image, index) => (
             <label
-              className={index === 0 ? "checked" : ""}
+              className={index === 0 ? 'checked' : ''}
               key={index}
               htmlFor={index}
               style={{ backgroundImage: `url(${image?.urls?.thumb})` }}
-              onClick={(event) =>
+              onClick={event =>
                 handleThumbnailClick(image?.urls?.regular, event)
               }
             ></label>
